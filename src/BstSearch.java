@@ -27,10 +27,10 @@ public class BstSearch {
 
         if(root == null) { return false; }
         else if(root.data.compareTo(target) > 0){
-            return contains(root.right, target);
+            return contains(root.left, target);
         }
         else if(root.data.compareTo(target) < 0){
-            return contains(root.left, target);
+            return contains(root.right, target);
         }
         else if(root.data.compareTo(target) == 0){
             return true;
